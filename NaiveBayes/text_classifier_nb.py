@@ -80,7 +80,7 @@ def testing_nb():
 
 def text_parse(big_string):
     import re
-    list_of_tokens = re.split(r'\W*', big_string)
+    list_of_tokens = re.split(r'\W+', big_string)
     return [tok.lower() for tok in list_of_tokens if len(tok) > 2]
 
 
